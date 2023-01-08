@@ -17,4 +17,4 @@ int main() {
         cout << " " << N;
     }
     cout << endl;
-}
+}       
