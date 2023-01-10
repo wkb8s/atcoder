@@ -1,4 +1,4 @@
-// 部分和問題として解く
+// 部分和問題にする
 
 #include <bits/stdc++.h>
 using namespace std;

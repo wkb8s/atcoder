@@ -1,4 +1,4 @@
-// 別解: bit全探索を用いて解く
+// 別解: ビット全探索を用いて解く
 
 #include <bits/stdc++.h>
 using namespace std;
