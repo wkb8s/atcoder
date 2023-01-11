@@ -1,9 +1,9 @@
-# AtCoder
-アルゴリズム能力向上のための, 競技プログラミング記録.
+# AtCoder関連
+アルゴリズム能力向上のための, 競技プログラミング記録. 2023年1月より取り組み開始.
 
 ## 過去問精選100問
 
-↓ 2023年より取組み中. アルゴリズムを体系的に学習するために利用.
+アルゴリズムを体系的に学習するために利用.
 
 「分野別　初中級者が解くべき過去問精選 100 問」
 https://qiita.com/e869120/items/eb50fdaece12be418faa
@@ -16,4 +16,4 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa
 
 ## ABC〇〇
 
-AtCoder Beginner's Contest. 毎週, 学習成果をチェックするために参加.
+AtCoder Beginner Contestの解答. 毎週, 学習成果をチェックするために参加.
