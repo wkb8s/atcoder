@@ -11,6 +11,7 @@ int M[N][N];
 int color[N], d[N], p[N];
 
 int prim(){
+    int u;
     for(int i=0; i<n; i++){
         color[i] = WHITE;
         d[i] = INF;
@@ -19,13 +20,31 @@ int prim(){
     p[0] = -1;
     while(1){
         int mincost = INF;
-        for(int i=0; i<n; i++){
-            if(color[i] != BLACK && d[i] << mincost){
+        for(int i=0; i<n; i++){ // ここで頂点を選ぶ
+            if(color[i] != BLACK && d[i] < mincost){
                 mincost = d[i];
                 u = i;
             }
         }
+        if(mincost == INF){
+            break;
+        }
+        color[u] = BLACK;
+        for(int v=0; v<n; v++){
+            if(color[v] != BLACK && M[u][v] != INF){
+                if(M[u][v] < d[v]){
+                    d[v] = M[u][v];
+                    p[v] = u; // parent 本問では必要なさそう
+                    color[v] = GRAY;
+                }
+            }
+        }
     }
+    int sum=0;
+    for(int i=0; i<n; i++){
+        sum += d[i];
+    }
+    return sum;
 }
 
 int main() {
